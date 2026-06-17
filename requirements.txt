@@ -1,0 +1,5 @@
+# 全球股票爬虫依赖
+redis>=5.0.0
+pymongo>=4.6.0
+longport-openapi>=1.0.0
+python-dotenv>=1.0.0

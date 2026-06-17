@@ -1,0 +1,33 @@
+{
+  "longport": {
+    "app_key": "68b77379776598102defe38faed46a00",
+    "app_secret": "30581f3d35a3999f674e1b431849511d52ca5cce3d5509248f274494f2ccd5bd",
+    "access_token": "m_eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ5YWRiMGIxYTdlNzYxNzEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJsb25nYnJpZGdlIiwic3ViIjoiYWNjZXNzX3Rva2VuIiwiZXhwIjoxNzg4OTMzNjI2LCJpYXQiOjE3ODExNTc2MjYsImFrIjoiNjhiNzczNzk3NzY1OTgxMDJkZWZlMzhmYWVkNDZhMDAiLCJhYWlkIjoyMTUwOTIwMSwiYWMiOiJsYl9wYXBlcnRyYWRpbmciLCJtaWQiOjI0MTQ3NjY0LCJzaWQiOiJWdkplamZDZ1UvdWcyenhsVFlQMkN3PT0iLCJibCI6MCwidWwiOjAsImlrIjoibGJfcGFwZXJ0cmFkaW5nXzIxNTA5MjAxIn0.dm0P9dXhQr3gpk3fLyNpfiiGx3W0FK3ROgGUTjiOp0jUsHABATLd5oXUXB3tdEZMIMAJRWBub4MSLgTYG2G1be2HugRimWM9w8xNBfRFViLbluRIKlsTltg6shAlF8Jzl1nGNiKblvLxOAR3F7Fxlzyu6lV9VhX2v_AYPCjvBUmoQj_i3gzXkWOM9qnbt9WX7LyvMfaeQDiCDVBG_RTDFJvcu7AdI0mqeDiMisSOYOiaCr4UmP8QJVGUGYxc3g5k7FPLPQy_7amyu0ByOVd8um1HZ8ehY7_1WJ7pylq1gso4v1WRmkNLo49CTKTz06sWka4e8EU4dbKZBl1FyvN9kcYkHWI6kGqdS0-nFaIAmLber8aHMCjnvHy4R_OutUcWE4omV_8w52Pa7cxMrTgiTWj_t0hRBT7GBzUG1sWdwkGWoLO8PUKQL4B5Otsd-_wBxwqtBHXPYlrI1yx5hB4rek2jMskxqoQ-6ARfE5I9h0uJ9CWCpComJST4ydPSB8fv7pUaNFzoHEMxF0W_iv-XTqjqnyjv9PSqLQOZmHN5Ts0eJbjEPdnTWWovcpqFLuRGnwAuT8G_bMXOVVoz_bz1ssmniZxqrBhtCiio1xzFqCSXErEW4VfpTmwvrSlfHmcPBeG91Ma9YaHfE0_ETwQ-HfIfKCMcB674CcJBfPMBJF8",
+    "region": "cn",
+    "enable_overnight": true,
+    "quote_batch_size": 500
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "password": "",
+    "timeout_ms": 5000,
+    "db": 0
+  },
+  "us_quotes": {
+    "codes_redis_key": "us:stock:codes",
+    "codes_cache_ttl_seconds": 3600,
+    "last_price_expire_seconds": 60,
+    "fetch_interval_seconds": 3
+  },
+  "feishu_webhook": "",
+  "mongo": {
+    "uri": "mongodb://admin:password@localhost:27017/db_global_stock?authSource=admin&directConnection=true",
+    "db_name": "db_global_stock",
+    "fund_collection": "fund_info",
+    "stock_collection": "us_stock_info",
+    "kline_collection": "us_kline_data",
+    "kline_today_collection": "us_kline_today",
+    "kline_history_collection": "us_kline_history"
+  }
+}
